@@ -1,6 +1,8 @@
 # Rashid Munir — Portfolio
 
-Static one-page portfolio (HTML/CSS/JS, no build step). Terminal identity, one real project, light/dark, accessible.
+Static one-page portfolio (HTML/CSS/JS, no build step). Terminal identity, one real project (FiberHome HG6145D2 Wi-Fi Extender), light/dark, accessible.
+
+**Live:** https://shhedmunir.vercel.app
 
 ## Run
 
