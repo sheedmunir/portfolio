@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#f5f5f7" />
+  <title>Rashid Munir — CS &amp; CE student</title>
+  <meta name="description" content="Portfolio of Rashid Munir, computer science and computer engineering student in Dar es Salaam, Tanzania." />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%231d1d1f'/%3E%3Ctext x='16' y='22' font-family='monospace' font-size='17' font-weight='700' fill='%23f5f5f7' text-anchor='middle'%3ER%3C/text%3E%3C/svg%3E" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="grid-bg" aria-hidden="true"></div>
+
+  <!-- Nav -->
+  <header class="nav">
+    <div class="container nav-inner">
+      <a href="#top" class="brand"><span class="prompt">$</span> rashid.munir</a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="primary-nav">&#9776;</button>
+      <nav class="nav-links" id="primary-nav">
+        <a href="#about">about</a>
+        <a href="#skills">skills</a>
+        <a href="#projects">projects</a>
+        <a href="#contact">contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+  <!-- Hero -->
+  <section id="top" class="hero">
+    <div class="container">
+      <h1>Hi, I'm <span class="accent">Rashid Munir</span>.</h1>
+      <p class="tagline">CS &amp; CE student. Linux, C++, and small things that work.</p>
+      <div class="terminal">
+        <div class="term-bar" aria-hidden="true"><span></span><span></span><span></span></div>
+        <div class="term-body">
+          <p><span class="t-prompt">$</span> whoami</p>
+          <p class="t-out">rashid_munir — computer science &amp; engineering student</p>
+          <p><span class="t-prompt">$</span> cat focus.txt</p>
+          <p class="t-out">C++ and JavaScript · one project at a time</p>
+          <p><span class="t-prompt">$</span> status</p>
+          <p class="t-out">open to collaboration · Dar es Salaam, Tanzania</p>
+          <p><span class="t-prompt">$</span> <span class="cursor">_</span></p>
+        </div>
+      </div>
+      <div class="hero-actions">
+        <a href="#contact" class="btn primary">get in touch</a>
+        <a href="#projects" class="btn ghost">see the work</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="section">
+    <div class="container">
+      <h2 class="section-title"><span class="hash">#</span> about</h2>
+      <div class="about-grid">
+        <div class="about-text">
+          <p>
+            I'm a computer science and computer engineering student in Dar es Salaam, Tanzania. Most of what I know came from installing Linux, breaking things in the terminal, and fixing them until they worked.
+          </p>
+          <p>
+            At the moment I'm working through C++, JavaScript, and HTML/CSS, and using OpenCode to move faster while I learn. The last thing I finished was turning a locked FiberHome router into a Wi-Fi extender through its UART console. I'm open to collaboration where I can keep building things that run.
+          </p>
+        </div>
+        <aside class="about-card">
+          <h3 class="about-card-title">Details</h3>
+          <dl class="facts">
+            <div><dt>name</dt><dd>Rashid Munir</dd></div>
+            <div><dt>role</dt><dd>CS &amp; CE student</dd></div>
+            <div><dt>os</dt><dd>Linux</dd></div>
+            <div><dt>status</dt><dd>open to collaboration</dd></div>
+          </dl>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills" class="section">
+    <div class="container">
+      <h2 class="section-title"><span class="hash">#</span> skills</h2>
+      <p class="section-sub">What I use, and what I'm still learning.</p>
+      <dl class="skill-list">
+        <div class="skill-row">
+          <dt>Languages</dt>
+          <dd>C++, JavaScript, HTML/CSS</dd>
+        </div>
+        <div class="skill-row">
+          <dt>Tools</dt>
+          <dd>Linux, Git, VS Code, GitHub</dd>
+        </div>
+        <div class="skill-row">
+          <dt>Learning</dt>
+          <dd>AI agents, frontend development</dd>
+        </div>
+        <div class="skill-row">
+          <dt>Built</dt>
+          <dd>FiberHome HG6145D2 Wi-Fi extender (BusyBox shell)</dd>
+        </div>
+      </dl>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="section">
+    <div class="container">
+      <h2 class="section-title"><span class="hash">#</span> projects</h2>
+      <p class="section-sub">One thing, finished properly. More coming.</p>
+      <div class="project-grid">
+        <article class="project-card" data-project="hg6145d2-extender" tabindex="0" role="button" aria-label="Open HG6145D2 Wi-Fi Extender project details">
+          <div class="project-head">
+            <h3>HG6145D2 Wi-Fi Extender</h3>
+            <p class="meta">Embedded Systems · 2026</p>
+          </div>
+          <p class="project-desc">Reverse-engineered a locked FiberHome HG6145D2 fiber router via UART boot break and reprogrammed it as a dual-band Wi-Fi extender with NAT, DHCP, and a web control page. ~800 lines of BusyBox shell, no packages, no build step.</p>
+          <span class="card-hint" aria-hidden="true">details →</span>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="section">
+    <div class="container">
+      <h2 class="section-title"><span class="hash">#</span> contact</h2>
+      <div class="contact-box">
+        <p>Want to collaborate, chat, or just say hi? Reach out.</p>
+        <div class="contact-grid">
+          <a class="contact-item" href="mailto:sheedmunir@gmail.com">
+            <span class="ci-label">email</span>
+            <span class="ci-value">sheedmunir@gmail.com</span>
+          </a>
+          <a class="contact-item" href="https://github.com/sheedmunir" target="_blank" rel="noopener">
+            <span class="ci-label">github</span>
+            <span class="ci-value">github.com/sheedmunir</span>
+          </a>
+          <div class="contact-item">
+            <span class="ci-label">location</span>
+            <span class="ci-value">Dar es Salaam, Tanzania 🌍</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p><span class="prompt">$</span> echo "© 2026 Rashid Munir" <span class="cursor">_</span></p>
+    </div>
+  </footer>
+
+  <!-- Project sheet -->
+  <div id="project-sheet" class="sheet" role="dialog" aria-modal="true" aria-labelledby="sheet-title" aria-hidden="true">
+    <div class="sheet-panel" id="sheet-panel">
+      <div class="sheet-topbar">
+        <button class="back-btn" id="sheet-back">‹ All projects</button>
+        <span class="sheet-brand">$ rashid.munir</span>
+        <a href="https://github.com/sheedmunir/extender" target="_blank" rel="noopener" class="sheet-github">View code →</a>
+      </div>
+      <div class="sheet-scroll" id="sheet-scroll">
+        <div class="sheet-body">
+          <h2 id="sheet-title"></h2>
+          <p class="sheet-meta" id="sheet-meta"></p>
+          <div class="sheet-cols">
+            <div class="sheet-main">
+              <h3>What it does</h3>
+              <p id="sheet-brief"></p>
+              <h3>How it works</h3>
+              <ol class="steps" id="sheet-steps"></ol>
+            </div>
+            <aside class="sheet-side">
+              <div class="side-card"><h4>Facts</h4><dl id="sheet-facts"></dl></div>
+              <div class="side-card"><h4>Stack</h4><div class="chips" id="sheet-tools"></div></div>
+            </aside>
+          </div>
+          <div class="sheet-outcome">
+            <h4>Outcome</h4>
+            <p id="sheet-outcome"></p>
+          </div>
+          <div class="sheet-next"><button class="btn ghost" id="sheet-close">Close</button></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
